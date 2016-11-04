@@ -1,0 +1,2 @@
+#!/bin/bash
+env GOOS=linux go build -ldflags "-s -w" -o index.cgi index.go
