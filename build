@@ -1,3 +1,4 @@
 #!/bin/bash
 env GOOS=linux go build -ldflags "-s -w" -o index.cgi simple/index.go
 env GOOS=linux go build -ldflags "-s -w" -o db_read.cgi db_read/db_read.go
+env GOOS=linux go build -ldflags "-s -w" -o db_write.cgi db_write/db_write.go
