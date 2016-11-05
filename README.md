@@ -9,6 +9,8 @@ Either execute the file ./build or run each command in the file individually to 
 ```bash
 env GOOS=linux go build -ldflags "-s -w" -o index.cgi simple/index.go
 env GOOS=linux go build -ldflags "-s -w" -o db_read.cgi db_read/db_read.go
+env GOOS=linux go build -ldflags "-s -w" -o db_write.cgi db_write/db_write.go
+env GOOS=linux go build -ldflags "-s -w" -o logging.cgi logging/logging.go
 ```
 
 This will generate a cgi for each example... You should move them to your shared host under the cgi-bin folder. If this folder does not already exist, create it. You may need to alter your host file to point to this directory, though it is a standard location on most hosts.
