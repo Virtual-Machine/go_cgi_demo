@@ -4,3 +4,5 @@ env GOOS=linux go build -ldflags "-s -w" -o db_read.cgi db_read/db_read.go
 env GOOS=linux go build -ldflags "-s -w" -o db_write.cgi db_write/db_write.go
 env GOOS=linux go build -ldflags "-s -w" -o logging.cgi logging/logging.go
 env GOOS=linux go build -ldflags "-s -w" -o html.cgi html/html.go
+env GOOS=linux go build -ldflags "-s -w" -o cookie_write.cgi cookie_write/cookie_write.go
+env GOOS=linux go build -ldflags "-s -w" -o cookie_read.cgi cookie_read/cookie_read.go
